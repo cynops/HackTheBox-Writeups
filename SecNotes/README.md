@@ -22,7 +22,7 @@ In this case we know that tyler user exists so we create a user with the followi
 
 ![](SecNotes-Images/3.PNG)
 
-In one of hist notes we can see the tyler password to access to smb.
+In one of his notes we can see the tyler password to access to smb.
 
 ![](SecNotes-Images/4.PNG)
 
