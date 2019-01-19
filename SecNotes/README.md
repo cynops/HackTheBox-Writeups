@@ -10,7 +10,7 @@
 nmap -sC -sV -v -Pn -n -p- 10.10.10.97
 ```
 
-![](SecNotes-Images\2.png)
+![](SecNotes-Images/2.png)
 
 
 
@@ -20,19 +20,19 @@ The user registration form is vulnerable to SQLi so if we know a user we can reg
 
 In this case we know that tyler user exists so we create a user with the following payload to access to all his notes.
 
-![](SecNotes-Images\3.PNG)
+![](SecNotes-Images/3.PNG)
 
 In one of hist notes we can see the tyler password to access to smb.
 
-![](SecNotes-Images\4.PNG)
+![](SecNotes-Images/4.PNG)
 
 We access to the smb service with tyler credentials.
 
-![](SecNotes-Images\5.PNG)
+![](SecNotes-Images/5.PNG)
 
 The **"new-site"** share has write privilege and corresponds with the http server on 8808 port so we can upload a php file to establish a reverse shell.
 
-![](SecNotes-Images\6.png)
+![](SecNotes-Images/6.png)
 
 ### Post Explotation
 
@@ -44,15 +44,15 @@ We will use the following command to find the bash executable:
 dir /s bash.exe
 ```
 
-![](SecNotes-Images\7.png)
+![](SecNotes-Images/7.png)
 
 Using the **"bash.exe"** file we enter in the bash subsystem and doing some enumeration we found the administrator user credentials in the **".bash_history"** file.
 
-![](C:\Users\Cynops\Documents\HackTheboxWriteUp\SecNotes-Images\8.png)
+![](SecNotes-Images/8.png)
 
 Knowing the credentials we can access to the administrator account and get the "**root.txt**" file.
 
-![](SecNotes-Images\9.png)
+![](SecNotes-Images/9.png)
 
-![](SecNotes-Images\10.png)
+![](SecNotes-Images/10.png)
 
