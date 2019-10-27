@@ -6,7 +6,7 @@
 
 ### <u>Port Scan</u>
 
-We will start with a **nmap** to scan for open ports with the following command:
+We are starting with a **nmap** to scan for open ports with the following command:
 
 ```
 ~$ nmap -sC -sV -p- 10.10.10.147
