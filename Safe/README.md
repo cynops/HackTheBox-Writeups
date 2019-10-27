@@ -40,7 +40,7 @@ When we enter in the web application we see the default Debian Apache webpage bu
 
 After downloading the application running on port 1337, we will analyze it to find any vulnerabilities that could compromise the server.
 
-**Myapp****** is a 64 bits application, dynamically linked and with no symbols stripped.
+**Myapp** is a 64 bits application, dynamically linked and with no symbols stripped.
 
 ![](Images/4.png)
 
@@ -132,6 +132,7 @@ After check that the application is vulnerable to buffer overflow we are going t
 3. **Execute Exploit:**
 
    We can execute any command but the program will finish after that, to avoid that we will execute "***/bin/bash***" in order to get a shell.
+   
    ![](Images/13.png)
 
    
