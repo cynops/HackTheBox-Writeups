@@ -141,7 +141,7 @@ After check that the application is vulnerable to buffer overflow we are going t
 
 ### <u>Privilege Escalation</u>
 
-We decide to write out public key at "***/home/user/.ssh/authorized_keys***" to enter by SSH.
+We decide to write our public key at "***/home/user/.ssh/authorized_keys***" to enter by SSH.
 
 ![](Images/14.png)
 
